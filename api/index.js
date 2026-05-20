@@ -44,5 +44,11 @@ app.post('/api/mahasiswa', (req, res) => {
     });
 });
 
-// Ekspor aplikasi agar bisa dijalankan sebagai Serverless Function oleh Vercel
+// Penyelaras port standar untuk memastikan serverless function mendengarkan request
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server berjalan di port ${PORT}`);
+});
+
+// Ekspor aplikasi agar bisa dikenali oleh Vercel handler
 module.exports = app;
