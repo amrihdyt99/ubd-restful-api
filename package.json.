@@ -1,0 +1,12 @@
+{
+  "name": "ubd-restful-api",
+  "version": "1.0.0",
+  "description": "RESTful API Sederhana untuk Tugas Cloud Computing UBD",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
